@@ -1,0 +1,15 @@
+body {
+    background-color: #fde1b6;
+    color: #58432f;
+    text-align: center;
+    align-items: center;
+    cursor: url(catcursor.cur), auto;
+}
+
+a {
+    cursor: url(dogcursor.cur), auto;
+}
+
+button {
+    cursor: url(catcursor.cur), auto;
+}

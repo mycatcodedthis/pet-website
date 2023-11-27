@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href = "..\static\style1.css" rel = "stylesheet"/>
+        <style>
+            .teenydiv {
+                align-self: center;
+                margin: 0 auto;
+                width: 200px;
+                height: auto;
+                border: 3px solid #58432f;
+                background-color:#dcaa6e ;
+                border-radius:10px;
+                padding: 10px;
+            }
+            .teenypic {
+                margin: 0 auto;
+                margin-top: 10px;
+                width: 280px;
+                height: auto;
+                border: 3px solid #58432f;
+                background-color: #58432f;
+                border-radius:10px;
+            }
+            .button {
+                margin-top: 3px;
+            }
+            .img {
+                width: 280px;
+                height: auto;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <title>teeny world domination</title>
+    <body>
+            <h1>my cat's name is teeny!</h1>
+        <div class = "teenydiv">
+            she is just so teeny tiny and there is not a single thought in that little brain of hers.
+        </div>
+        <div class = 'teenypic'>
+        <img class = 'img' id="img" src = "..\static\teeny1.jpeg"/>
+        <button onclick = "display_teeny();" class = "button">click for teeny pictures!</button>
+        <script> 
+            function display_teeny(){
+                const teenyarr = [
+                "../static/teeny1.jpeg", "../static/teeny2.jpeg", "../static/teeny3.jpeg",
+                "../static/teeny4.jpeg", "../static/teeny5.jpeg", "../static/teeny6.jpeg",
+                "../static/teeny7.jpeg",
+                ];
+                let num = Math.floor(Math.random() * 7);
+                document.getElementById("img").src = teenyarr[num];
+            }
+        </script>
+        </div>
+        <p><a href = "..\templates\theo.html">oh are you a dog person?</a></p>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href = "..\static\style2.css" rel = "stylesheet"/>
+        <style>
+             .theodiv {
+                align-self: center;
+                margin: 0 auto;
+                width: 200px;
+                height: auto;
+                border: 3px solid #40476a;
+                background-color:#b2c2eb ;
+                border-radius:10px;
+                padding: 10px;
+            }
+            .theopic {
+                margin: 0 auto;
+                margin-top: 10px;
+                width: 280px;
+                height: auto;
+                border: 3px solid #40476a;
+                background-color: #40476a;
+                border-radius:10px;
+            }
+            .button {
+                margin-top: 3px;
+            }
+            .img {
+                width: 280px;
+                height: auto;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <title>theo theo theo theo theo</title>
+    <body>
+        <h1>my sister's dog's name is theo!</h1>
+        <div class = 'theodiv'>my sister's dog is pretty cute too he used to look like a pile of mashed potatoes.</div>
+        <div class = 'theopic'>
+            <img class = 'img' id="img" src = "..\static\theo1.jpg"/>
+        <button onclick = "display_theo();" class = "button">click for theo pictures!</button>
+        <script>
+                function display_theo(){
+                const theoarr = [
+                "../static/theo1.jpg", "../static/theo2.jpg", "../static/theo3.jpg",
+                "../static/theo4.jpg", "../static/theo5.jpg"];
+                let num = Math.floor(Math.random() * 5);
+                document.getElementById("img").src = theoarr[num];
+            }
+        </script>
+        </div>
+        <p><a href = "..\templates\home.html">perhaps my cute cat has swayed you to be a cat person?</a></p>
+    </body>
+</html>
